@@ -1,13 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="overlay" id="overlay"></div>
+    <section class="main">
+            <picture>
+                <img src="877b7940de78091f301870655e0fcdb6.png">
+            </picture>
+        <form>
+            <div>
+                <label for="valorDaConta">Valor total da conta</label>
+                <input type="number" id="valorDaConta" placeholder="R$ 0,00">
+            </div>
+
+            <div>
+                <label for="valorDaTaxa">Valor da taxa de serviço:</label>
+                <input type="number" id="valorDaTaxa" name="taxa" placeholder="R$ 0,00">
+            </div>
+
+            <div>
+                <label for="qntPagantes">Quantidade de pagantes:</label>
+                <input type="number" id="qntPagantes" placeholder="0">
+            </div>
+
+            <div>
+                <button type="submit" id="calcular">Calcular</button>
+            </div>
+        </form>
+
+    </section>
+
+    <section class="sec" id="section1">
+        <div class="modal">
+            <button class="X" id="X"><strong>X</strong></button>
+            <h1><strong>Este pagamento terá desconto?</strong></h1>
+            <p>Apenas para contas pagas em pix, débito ou dinheiro </p>
+            <div class="Dbtn">
+                <button type="submit" id="Nao">Não</button>
+                <button type="submit" id="Sim">Sim</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2" id="section2">
+        <div class="modal2">
+            <button class="X2" id="X2"><strong>X</strong></button>
+            <div class="contentModal3" style="text-align: center; margin-top: 50px;">
+                    <h1><strong>Valor da conta:</strong></h1>
+                    <p id="p1">Total do consumo: </p>
+                    <p id="p2">Taxa de serviço: </p>
+                    <p id="p3">Total por pessoa: </p>
+            </div>
+            <button type="submit" id="concluir">Concluir</button>
+        </div>
+    </section>
 
     <script src="index.js"></script>
 </body>

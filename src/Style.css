@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Config do corpo*/
+.main {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Config da imagem*/
+img {
+  margin: 10px 0 50px 0;
+  width: 381px;
+  height: 353px;
+} 
+
+/*Config basica do form*/
+form {
+  display:flex;
+  flex-direction: column;
+}
+
+/*Config global para div*/
+div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 0 0;
+}
+
+/* ------------------------------------------- */
+
+/* Config das sections */
+
+.sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  display: none;
+}
+
+.sec.show {
+  display: flex;
+}
+
+.sec2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  display: none;
+}
+
+.sec2.show {
+  display: flex;
+}
+
+/* ------------------------------------------- */
+
+/*Config dos Inputs*/
+input {
+  width: 400px;
+  height: 42px;
+  border-radius: 6px;
+  border: solid 1px #cccccc;
+  padding: 4px 3px 4px 8px;
+  color: #000000;
+}
+
+/*Config dos buttons*/
+button {
+  width: 400px;
+  height: 40px;
+  border-radius: 8px;
+  border: solid 1px;
+  color: #ffffff;
+  background-color: #284a5e;
+  margin-top: 100px;
+}
+
+/* Config dos modals */
+
+.modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  border-radius: 15px;
+  width: 465px;
+  height: 196px;
+  top: 400px;
+  margin: 0;
+  z-index: 10;
+}
+
+.modal2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  border-radius: 15px;
+  width: 465px;
+  height: 196px;
+  top: 400px;
+  margin: 0;
+  z-index: 10;
+}
+
+
+/* Config dos paragrafos */
+
+p {
+  width: 385px;
+  height: 22px;
+  color: #54595e;
+  font-weight: 400;
+  size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.contentModal3 {
+  position: relative;
+  top: -30px;
+}
+
+/* Config da div dos botoes do modal */
+
+.Dbtn {
+  display: flex;
+  flex-direction: row;
+  width: 385px;
+  height: 44px;
+  gap: 24px;
+}
+
+/* Config dos botões */
+
+#Sim {
+  width: fill(185.5px);
+  height: fixed(44px);
+  border-radius: 8px;
+  padding: 14px 20px 14px 20px;
+  gap: 10px;
+  background-color: #284a5e;
+  color: #ffffff;
+  margin: 0;
+  margin: 7px 0 0 0;
+}
+
+#Nao {
+  width: fill(180.5px);
+  height: fixed(44px);
+  border-radius: 8px;
+  border: solid 1 px;
+  padding: 14px 20px 14px 20px;
+  gap: 10px;
+  background-color: #ffffff;
+  color: #284a5e;
+  margin: 0;
+  margin: 7px 0 0 0;
+}
+
+#concluir {
+  position: relative;
+  top: -28px;
+  width: fill(185.5px);
+  height: fixed(44px);
+  border-radius: 8px;
+  padding: 14px 20px 14px 20px;
+  gap: 10px;
+  background-color: #284a5e;
+  color: #ffffff;
+  margin: 0;
+  margin: 7px 0 0 0;
+}
+
+
+/* Config do botao X */
+
+.X {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  top: -20px;
+  left: 45.2%;
+  border-radius: 29px;
+  padding: 4px;
+  margin: 0;
+  color: #284a5e;
+  background-color: #ffffff;
+}
+
+.X2 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  top: 24px;
+  left: 45.2%;
+  border-radius: 29px;
+  padding: 2px;
+  margin: 0;
+  color: #284a5e;
+  background-color: #ffffff;
+}
+
+
+/* Configuração para o fundo escurecido */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+  display: none;
+  z-index: 5;
+  margin: 0;
+}
+
+.overlay.show {
+  display: block;
+}
